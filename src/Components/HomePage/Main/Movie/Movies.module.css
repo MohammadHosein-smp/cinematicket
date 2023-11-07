@@ -1,0 +1,240 @@
+.movie {
+  display: flex;
+  margin-right: 42px;
+  gap: 20px;
+}
+.cover {
+  position: relative;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+.cover {
+  width: calc(70vw - 40px);
+}
+.cover .photoCover {
+  width: 100%;
+  height: calc((70vw - 40px) * 0.278);
+  border-radius: 15px;
+}
+.cover .shadow {
+  position: absolute;
+  top: 0px;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: calc(70vw - 40px);
+  height: calc((70vw - 40px) * 0.278);
+  border-radius: 15px;
+}
+.cover .shadow .posterInf {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+.cover .shadow .posterInf .photoPoster {
+  border-radius: 10px;
+  height: calc((27.8vw - 73.03px) * 0.7);
+}
+.cover .shadow .posterInf .infBox {
+  height: calc((27.8vw - 73.03px) * 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.cover .shadow .posterInf .infBox .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.cover .shadow .posterInf .infBox .actors {
+  display: inline-flex;
+  gap: 10px;
+  margin: 0px;
+}
+.cover .shadow .posterInf .infBox .actors .actor {
+  display: flex;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: rgb(70, 70, 70, 0.5);
+  padding: 5px 5px 5px 15px;
+  font-weight: bold;
+}
+.cover .shadow .posterInf .infBox .actors .actor .photoActor {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.cover .shadow .buyTicket {
+  position: absolute;
+  bottom: 20px;
+  left: 2vw;
+  display: inline-flex;
+  gap: 15px;
+  padding: 7.5px 27.5px;
+  background-color: rgb(249, 65, 65);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+.movieTitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  width: calc(70vw - 40px);
+  padding: 15px 0px 10px 0px;
+}
+.movieTitle .titleRight {
+  padding: 5px 0px;
+}
+.movieTitle .titleLeft .seeMore {
+  color: red;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.movieTitle .titleLeft .seeMore:hover {
+  background-color: rgb(120, 120, 120, 0.1);
+}
+.movies {
+  width: calc(70vw - 40px);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.movies .poster {
+  width: calc(14vw - 16px);
+  position: relative;
+  padding-top: 5px;
+  margin-top: 0px;
+}
+.movies .poster:hover .shadowPoster {
+  display: block;
+}
+.movies .poster .photoPoster {
+  width: 100%;
+  height: calc((14vw - 16px) * 1.33);
+  border-radius: 10px;
+}
+.movies .poster .shadowPoster {
+  display: none;
+  position: absolute;
+  top: 5px;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  height: calc((14vw - 16px) * 1.33);
+  border-radius: 10px;
+}
+.movies .poster .shadowPoster .infBox {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.movies .poster .shadowPoster .infBox .rateView {
+  display: flex;
+  padding-bottom: 5px;
+}
+.movies .poster .shadowPoster .infBox .rateView .rate {
+  display: flex;
+  gap: 3px;
+  margin: 0px auto;
+}
+.movies .poster .shadowPoster .infBox .rateView .rate span {
+  font-weight: bold;
+}
+.movies .poster .shadowPoster .infBox .rateView .rate .icon {
+  color: red;
+}
+.movies .poster .shadowPoster .infBox .rateView .view {
+  display: flex;
+  gap: 3px;
+  margin: 0px auto;
+}
+.movies .poster .shadowPoster .director span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.movies .poster .movieName {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+}
+.saleTable {
+  border-radius: 15px;
+  width: calc(30vw - 80px);
+  height: fit-content;
+  background-color: white;
+  margin: 30px 0px 0px 0px;
+  border-spacing: 0px;
+}
+.saleTable .saleTableHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+}
+.saleTable .saleTableHeader .title {
+  text-wrap: nowrap;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: gray;
+}
+
+.saleTable .movieSale {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+}
+.saleTable .movieSale:hover {
+  background-color: rgb(0, 0, 0, 0.02);
+}
+.saleTable .movieSale .movieSaleBox {
+  display: flex;
+  gap: 8px;
+}
+.saleTable .movieSale .movieSaleBox img {
+  width: 65px;
+  height: 90px;
+  border-radius: 8px;
+  margin: auto 0px;
+}
+.saleTable .movieSale .movieSaleBox .nameAmountDirector {
+  height: 90px;
+  width: calc(30vw - 203px);
+  display: flex;
+  flex-direction: column;
+}
+.saleTable .movieSale .movieSaleBox .nameAmountDirector .nameAmount {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+.saleTable .movieSale .movieSaleBox .nameAmountDirector .nameAmount .name {
+  font-size: 1.1em;
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.saleTable .movieSale .movieSaleBox .nameAmountDirector .nameAmount .amount {
+  font-size: 0.8em;
+}
+.saleTable .movieSale .movieSaleBox .nameAmountDirector .director {
+  color: #555555;
+  font-size: 0.9em;
+}
+
+.saleTable .saleTableFooter {
+  display: block;
+  color: red;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 30px 0px;
+}

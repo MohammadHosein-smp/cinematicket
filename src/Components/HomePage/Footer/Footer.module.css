@@ -1,0 +1,31 @@
+.footer {
+  background-color: #333333;
+  color: rgba(255, 255, 255, 0.711);
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 40px;
+  font-size: 1.1em;
+  width: 100%;
+}
+.footer .rightSide {
+  display: flex;
+  font-size: 0.85em;
+  color: white;
+}
+.footer .rightSide .link {
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+.footer .rightSide .link:hover {
+  background-color: rgb(255, 255, 255, 0.15);
+}
+.footer .leftSide {
+  display: flex;
+  gap: 16px;
+  margin-left: 8px;
+}
+.footer .leftSide .icon {
+  font-size: 1.1em;
+}

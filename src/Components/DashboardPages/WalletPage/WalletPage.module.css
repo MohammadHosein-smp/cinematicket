@@ -1,0 +1,113 @@
+.walletPage {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+  font-size: 1.2em;
+  margin: auto 60px;
+}
+.wallet .walletInf {
+  display: flex;
+  gap: 10px;
+}
+.wallet .walletInf .icon {
+  height: 16px;
+  color: rgb(0, 0, 0, 0.3);
+}
+.wallet .decrease {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wallet .decrease label {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.6);
+}
+.wallet .decrease .infReq {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet .decrease .infReq .walletInf {
+  display: flex;
+  gap: 25px;
+  padding: 8.4px 17px;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0, 0.03);
+}
+.wallet .decrease .infReq .walletInf .value {
+  font-size: 0.9em;
+  background-color: rgb(214, 229, 255);
+  color: rgb(115, 162, 251);
+  padding: 7px 13px;
+  border-radius: 50px;
+}
+.wallet .decrease .infReq .request {
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.wallet .increase {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wallet .increase label {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.6);
+}
+.wallet .increase .infReq {
+  display: flex;
+  justify-content: space-between;
+}
+.wallet .increase .infReq .walletInf {
+  display: flex;
+  gap: 15px;
+  height: 50px;
+  font-size: 0.8em;
+}
+.wallet .increase .infReq .walletInf .value {
+  color: rgb(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+.wallet .increase .infReq .walletInf .value:hover {
+  background-color: rgb(0, 0, 0, 0.03);
+}
+.wallet .increase .infReq .walletInf .text {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.wallet .increase .infReq .walletInf .input {
+  border: none;
+  background-color: rgb(0, 0, 0, 0.04);
+  color: rgb(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+.wallet .increase .infReq .request {
+  width: 220px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0, 0.4);
+}

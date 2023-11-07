@@ -1,0 +1,27 @@
+@font-face {
+  font-family: dana;
+  src: url(../public/fonts/dana-fanum-regular.1f3bda4f2c0f6f3d.woff2);
+}
+* {
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: dana;
+  scroll-behavior: smooth;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body {
+  font-size: 12px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgb(0, 0, 0, 0.4);
+}
+a {
+  text-decoration: none;
+  color: #000;
+}

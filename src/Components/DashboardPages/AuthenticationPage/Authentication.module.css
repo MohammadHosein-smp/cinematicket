@@ -1,0 +1,54 @@
+.authenticationPage {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.authentication {
+  background-color: white;
+  font-size: 1.2em;
+  margin: auto 60px;
+  width: 100%;
+  padding: 30px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.authentication .title {
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 1.1em;
+}
+.authentication p span {
+  color: #51a2ff;
+}
+.authentication .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  padding-top: 10px;
+}
+.authentication .form .part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.authentication .form .part label span {
+  color: red;
+}
+.authentication .form .part input {
+  border: none;
+  width: 450px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  background-color: rgb(0, 0, 0, 0.03);
+}
+.authentication button {
+  padding: 12px;
+  border: none;
+  color: rgb(0, 0, 0, 0.5);
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.04);
+  width: 250px;
+  border-radius: 10px;
+}

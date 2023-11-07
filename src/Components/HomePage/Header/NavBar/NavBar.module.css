@@ -1,0 +1,190 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 45px 15px 30px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+}
+.nav .navRight {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+}
+.nav .navRight .logoBtn {
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  gap: 4px;
+}
+.nav .navRight .logoBtn svg:hover {
+  fill: red;
+}
+.nav .navRight .cinemaBtn {
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.nav .navRight .cinemaBtn:hover {
+  background-color: rgb(255, 0, 0, 0.05);
+}
+.nav .navRight .cinemaBtn:hover :nth-child(n) {
+  color: red;
+}
+.nav .navRight .cinemaBtn .icon {
+  color: rgb(184, 184, 184);
+}
+.nav .navRight .searchBox {
+  display: inline-flex;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.05);
+  padding: 5px;
+}
+.nav .navRight .searchBox input {
+  border: none;
+  font-size: 0.9em;
+  width: 200px;
+  background-color: transparent;
+}
+.nav .navLeft {
+  display: inline-flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.nav .navLeft .btn {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.nav .navLeft .btn:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.nav .navLeft .btn .icon {
+  color: rgb(184, 184, 184);
+}
+.nav .navLeft .popup {
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  top: 50px;
+  left: 40px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 370px;
+}
+.nav .navLeft .popup .exit {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.nav .navLeft .popup .dashPopSec {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav .navLeft .popup .dashPopSec .lable {
+  display: flex;
+  gap: 15px;
+}
+.nav .navLeft .popup .popupIcon {
+  color: rgb(0, 0, 0, 0.7);
+  width: 16px;
+  height: 16px;
+}
+
+.nav .navLeft .citiesPopup {
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  top: 60px;
+  left: 19%;
+  font-size: 1.3em;
+  border-radius: 10px;
+  padding: 15px 30px;
+  width: 62%;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+}
+.nav .navLeft .citiesPopup .cityHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 11.3px 0px 22.6px 0px;
+}
+.nav .navLeft .citiesPopup .cityHeader .titleSearch {
+  display: flex;
+  gap: 10px;
+}
+.nav .navLeft .citiesPopup .cityHeader .titleSearch span {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0, 0.5);
+}
+.nav .navLeft .citiesPopup .cityHeader .titleSearch .citySearch {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.nav .navLeft .citiesPopup .cityHeader .titleSearch .citySearch input {
+  border: none;
+  background-color: whitesmoke;
+  width: 250px;
+}
+.nav .navLeft .citiesPopup .cityHeader .xmark {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.nav .navLeft .citiesPopup .cityList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5px;
+  grid-auto-rows: min-content;
+  height: 387px;
+  padding-right: 0px;
+  padding: 15px 0px;
+}
+.nav .navLeft .citiesPopup .cityList .city {
+  list-style-type: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: inline;
+  width: fit-content;
+  cursor: pointer;
+}
+.nav .navLeft .citiesPopup .cityList .city:hover {
+  background-color: whitesmoke;
+}
+.nav .navLeft .citiesPopup .cityFooter {
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  direction: ltr;
+  padding: 22.6px 0px 11.3px 0px;
+}
+.nav .navLeft .citiesPopup .cityFooter button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  width: fit-content;
+  display: inline-flex;
+  gap: 5px;
+  border-radius: 5px;
+}

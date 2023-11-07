@@ -1,0 +1,186 @@
+.cinemaPage .rightSide .icons {
+  margin-top: 50px;
+  font-size: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.cinemaPage {
+  background-color: rgb(0, 0, 0, 0.05);
+  display: flex;
+  gap: 20px;
+  padding: 80px 42px 60px 0px;
+}
+
+.cinemaPage .rightSide {
+  width: calc(70vw - 40px);
+  margin-top: 30px;
+}
+.cinemaPage .rightSide .menu {
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 8px;
+}
+.cinemaPage .rightSide .menuBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+}
+.menuBar .active {
+  font-weight: bold;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+.cinemaPage .rightSide .menuBar .menuOption {
+  display: flex;
+  gap: 10px;
+  color: rgb(0, 0, 0, 0.7);
+}
+.cinemaPage .rightSide .menuBar .menuOption span {
+  padding: 5px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.cinemaPage .rightSide .menuBar .menuOption span:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.cinemaPage .rightSide .menuBar .filter {
+  display: flex;
+  gap: 10px;
+  font-size: 1.1em;
+  padding: 7px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.cinemaPage .rightSide .menuBar .filter:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.cinemaPage .rightSide .menuBar .filter .icon {
+  color: rgb(0, 0, 0, 0.5);
+}
+.menu .possibilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 15px 0px;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0, 0.7);
+}
+.menu .possibilities .possibility {
+  list-style-type: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu .possibilities .possibility:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.menu .possibilities .possibility span {
+  text-wrap: nowrap;
+}
+.rightSide .title {
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 30px 0px;
+}
+.rightSide .cinemaSec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.rightSide .cinemaSec .cinema {
+  display: flex;
+  flex-direction: column;
+  width: calc((70vw - 80px) / 3);
+  height: 100%;
+  margin-top: 0px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.rightSide .cinemaSec .cinema:hover .infBox {
+  background-color: rgb(0, 0, 0, 0);
+}
+.rightSide .cinemaSec .cinema img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 0px;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.rightSide .cinemaSec .cinema .infBox {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rightSide .cinemaSec .cinema .infBox .name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.8);
+}
+.rightSide .cinemaSec .cinema .infBox .location {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
+.rightSide .cinemaSec .cinema .infBox .location span {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rightSide .cinemaSec .cinema .infBox .location .icon {
+  color: rgb(0, 0, 0, 0.5);
+}
+.rightSide .cinemaSec .cinema .infBox .rate {
+  display: flex;
+  gap: 5px;
+}
+.rightSide .cinemaSec .cinema .infBox .rate .ratePoint {
+  color: white;
+  display: flex;
+  gap: 5px;
+  padding: 3px 8px 0px 8px;
+  border-radius: 10px;
+}
+.rightSide .cinemaSec .cinema .infBox .rate .ratePoint .icon {
+  margin-top: 1px;
+}
+.rightSide .cinemaSec .cinema .infBox .rate .rateNum {
+  padding-top: 3px;
+}
+.rightSide .cinemaSec .cinema .infBox .cinemaPossibilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-right: 0px;
+  color: rgb(0, 0, 0, 0.7);
+}
+.rightSide .cinemaSec .cinema .infBox .cinemaPossibilities .cinemaPossibility {
+  list-style-type: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.cinema .infBox .cinemaPossibilities .cinemaPossibility:hover span {
+  display: block;
+}
+.cinema .infBox .cinemaPossibilities .cinemaPossibility .icon {
+  width: 12px;
+  height: 12px;
+}
+.cinema .infBox .cinemaPossibilities .cinemaPossibility span {
+  font-size: 0.9em;
+  display: none;
+  padding-top: 1px;
+}

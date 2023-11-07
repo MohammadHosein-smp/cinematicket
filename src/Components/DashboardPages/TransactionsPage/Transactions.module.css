@@ -1,0 +1,19 @@
+.transactionsPage {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 170px;
+}
+.transaction img {
+  width: 200px;
+}
+.transaction b {
+  margin: 40px 0px 20px 0px;
+  font-size: 1.1em;
+}

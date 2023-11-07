@@ -1,0 +1,29 @@
+.MyTicketsPage {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+
+.MyTickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 170px;
+}
+.MyTickets img {
+  width: 200px;
+}
+.MyTickets b {
+  margin: 40px 0px 20px 0px;
+  font-size: 1.1em;
+}
+.MyTickets button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 7px;
+  margin-top: 20px;
+}

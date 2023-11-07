@@ -1,0 +1,101 @@
+.slider {
+  position: relative;
+  height: calc(27.8vw + 3.8px);
+  padding: 15px 0px;
+}
+.slider .slides {
+  position: absolute;
+  right: calc(-100vw + 128px);
+  display: inline-flex;
+  gap: 15px;
+}
+.slider .slides .slide {
+  width: calc(100vw - 100px);
+}
+.slider .slides .slide .photoCover {
+  width: 100%;
+  height: calc((100vw - 100px) * 0.278);
+  border-radius: 12px;
+}
+.slider .slides .slide .shadow {
+  position: absolute;
+  top: 0px;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: calc(100vw - 100px);
+  height: calc((100vw - 100px) * 0.278);
+  border-radius: 12px;
+}
+.slider .slides .slide .shadow .posterInf {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  gap: 25px;
+}
+.slider .slides .slide .shadow .posterInf .photoPoster {
+  border-radius: 10px;
+  height: calc(27.8vw - 77.8px);
+}
+.slider .slides .slide .shadow .posterInf .infBox {
+  height: calc(27.8vw - 77.8px);
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.slider .slides .slide .shadow .posterInf .infBox .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px;
+}
+.information {
+  display: flex;
+  gap: 10px;
+}
+
+.information .infSec {
+  display: inline-flex;
+  gap: 5px;
+  background-color: rgb(100, 100, 100, 0.5);
+  padding: 6px 10px 3px 10px;
+  font-size: 0.95em;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.slider .slides .slide .shadow .posterInf .infBox .ticket {
+  margin: 0px;
+}
+.slider .slides .slide .shadow .posterInf .infBox .buyTicket {
+  display: inline-flex;
+  gap: 10px;
+  padding: 12px 25px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+.slider .slides .slide .shadow .photoSuperstar {
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  height: calc(27.8vw - 20px);
+}
+.slider .buttons {
+  position: absolute;
+  z-index: 1;
+  right: calc(195vw - 290px);
+  bottom: 3.5vw;
+  color: white;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
+.slider .buttons .icon {
+  padding: 17px 20px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0, 0.25);
+  cursor: pointer;
+}

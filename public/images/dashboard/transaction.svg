@@ -1,0 +1,191 @@
+<svg height="120.538" viewBox="0 0 169 120.538" width="169" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style>
+            .cls-1 {
+                stroke: rgba(0, 0, 0, 0);
+                stroke-miterlimit: 10;
+                fill: url(#radial-gradient);
+            }
+
+            .cls-2 {
+                fill: url(#radial-gradient-2);
+            }
+
+            .cls-3 {
+                fill: #dddeee;
+            }
+
+            .cls-4 {
+                fill: url(#radial-gradient-3);
+            }
+
+            .cls-5 {
+                fill: url(#linear-gradient);
+            }
+
+            .cls-6 {
+                fill: url(#radial-gradient-5);
+            }
+
+            .cls-7 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-8 {
+                fill: url(#radial-gradient-6);
+            }
+
+            .cls-10, .cls-9 {
+                fill: #fff;
+            }
+
+            .cls-10 {
+                opacity: 0.54;
+            }
+
+            .cls-11 {
+                fill: none;
+            }
+
+            .cls-12 {
+                filter: url(#Ellipse_354);
+            }
+
+            .cls-13 {
+                filter: url(#Union_7);
+            }
+
+            .cls-14 {
+                filter: url(#Union_5);
+            }
+        </style>
+        <radialGradient cx="0.877" cy="0.051" gradientTransform="translate(0.141) scale(0.719 1)" gradientUnits="objectBoundingBox" id="radial-gradient" r="1.486">
+            <stop offset="0.005" stop-color="#fff"/>
+            <stop offset="0.175" stop-color="#f8f7ff"/>
+            <stop offset="0.354" stop-color="#f0effa"/>
+            <stop offset="0.63" stop-color="#dadcec"/>
+            <stop offset="0.84" stop-color="#c6cae0"/>
+        </radialGradient>
+        <radialGradient cx="0.581" cy="0.232" gradientTransform="matrix(0.47, -0.883, 3.44, 1.833, -2.203, -0.131)" gradientUnits="objectBoundingBox" id="radial-gradient-2" r="1.434">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="0.077" stop-color="#fff"/>
+            <stop offset="0.175" stop-color="#f8f7ff"/>
+            <stop offset="0.354" stop-color="#f0effa"/>
+            <stop offset="0.63" stop-color="#dadcec"/>
+            <stop offset="0.84" stop-color="#c6cae0"/>
+            <stop offset="1" stop-color="#c6cae0"/>
+        </radialGradient>
+        <radialGradient cx="1.022" cy="-0.078" gradientTransform="matrix(0.997, -0.076, 0.083, 1.076, 0.009, 0.084)" gradientUnits="objectBoundingBox" id="radial-gradient-3" r="1.223">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="0.005" stop-color="#fff"/>
+            <stop offset="0.175" stop-color="#f8f7ff"/>
+            <stop offset="0.354" stop-color="#f0effa"/>
+            <stop offset="0.63" stop-color="#dadcec"/>
+            <stop offset="0.84" stop-color="#c6cae0"/>
+            <stop offset="1" stop-color="#c6cae0"/>
+        </radialGradient>
+        <linearGradient gradientUnits="objectBoundingBox" id="linear-gradient" x1="0.5" x2="0.5" y1="0.019" y2="0.513">
+            <stop offset="0" stop-color="#fff" stop-opacity="0.8"/>
+            <stop offset="0.292" stop-color="#fff" stop-opacity="0.58"/>
+            <stop offset="0.962" stop-color="#fff" stop-opacity="0.031"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <filter filterUnits="userSpaceOnUse" height="59.417" id="Union_5" width="73.592" x="36.13" y="33.973">
+            <feOffset dy="16" input="SourceAlpha"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#c6cae0" flood-opacity="0.4"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <radialGradient cx="0.647" cy="0.963" id="radial-gradient-5" r="1.434" xlink:href="#radial-gradient-2"/>
+        <filter filterUnits="userSpaceOnUse" height="59.417" id="Union_7" width="73.592" x="64.44" y="59.986">
+            <feOffset dy="16" input="SourceAlpha"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-color="#c6cae0" flood-opacity="0.4"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path">
+            <path class="cls-1"
+                  d="M25.16,106.19A12.885,12.885,0,0,1,12.276,93.3V32.878c0-.014,0-.029,0-.043V32.81c0-.014,0-.028,0-.042v-.029c0-.013,0-.025,0-.038v-.028c0-.014,0-.026,0-.04s0-.021,0-.031,0-.024,0-.036,0-.022,0-.032,0-.023,0-.036,0-.021,0-.031,0-.023,0-.035,0-.022,0-.031,0-.025,0-.037,0-.022,0-.032,0-.024,0-.037,0-.022,0-.032,0-.023,0-.034,0-.023,0-.035,0-.022,0-.033,0-.022,0-.032,0-.025,0-.037,0-.022,0-.033l0-.035c0-.011,0-.022,0-.033s0-.023,0-.034l0-.036c0-.011,0-.022,0-.032l0-.035,0-.034,0-.037c0-.01,0-.021,0-.031s0-.024,0-.037,0-.021,0-.031,0-.027,0-.041l0-.029,0-.038c0-.012,0-.023,0-.035l0-.035c0-.012,0-.024,0-.037l0-.031c0-.012,0-.023,0-.034s0-.025,0-.039l0-.03c0-.013,0-.025,0-.038l0-.031c.008-.076.017-.155.026-.232a.135.135,0,0,1,0-.018c0-.017,0-.034.006-.051s0-.012,0-.017,0-.034.006-.05l0-.021c0-.02.005-.041.007-.059a.034.034,0,0,0,0-.009c0-.017,0-.034.007-.051l0-.023c0-.016,0-.032.007-.049a.147.147,0,0,1,0-.02c0-.016.005-.033.007-.049s0-.015,0-.023,0-.032.006-.049,0-.014,0-.021,0-.031.006-.047,0-.018,0-.027,0-.03.006-.044,0-.017,0-.025,0-.031.007-.048,0-.015,0-.023l.008-.05,0-.018.008-.053a.186.186,0,0,0,0-.02l.008-.051c0-.005,0-.013,0-.019s.005-.035.009-.053l0-.019c0-.018.006-.036.009-.054l0-.014c0-.019.006-.037.01-.055a.166.166,0,0,1,0-.021c0-.017.005-.034.009-.051a.172.172,0,0,1,0-.019c0-.018.006-.036.01-.055a.071.071,0,0,1,0-.013l.011-.06a.017.017,0,0,0,0-.007c0-.022.008-.042.012-.064a.027.027,0,0,0,0-.009c0-.021.008-.041.013-.063,0,0,0,0,0-.006q.065-.336.141-.675H9a9,9,0,0,1-9-9V9A9,9,0,0,1,9,0H126.5a9,9,0,0,1,9,9V19.859a9,9,0,0,1-9,9h-4.381l.008.034a.045.045,0,0,1,0,.011c.005.021.01.041.014.063a0,0,0,0,0,0,0c.031.14.059.28.087.419a.033.033,0,0,1,0,.008c0,.019.008.039.012.058l0,.015.011.054c0,.006,0,.013,0,.018s.006.035.01.053,0,.014,0,.02.005.031.009.046l.005.028.008.044c0,.009,0,.018,0,.028l.008.042.005.031c0,.014,0,.028.007.041l.005.031c0,.014,0,.028.007.041l.005.03c0,.014,0,.03.007.045s0,.017,0,.026l.008.046c0,.008,0,.016,0,.024l.008.047c0,.01,0,.018,0,.027s0,.028.007.041,0,.021,0,.031,0,.029.007.043,0,.017,0,.026,0,.03.007.044,0,.019,0,.028,0,.03.007.044,0,.017,0,.026,0,.03.006.046,0,.015,0,.023,0,.032.007.048l0,.021c0,.017,0,.034.006.05l0,.019c0,.018,0,.035.007.052l0,.022c0,.015,0,.031.006.046s0,.021,0,.031l.005.04,0,.024c0,.016,0,.031.006.047s0,.013,0,.019c.015.125.029.249.041.374l0,.027c0,.013,0,.026,0,.039l0,.03c0,.014,0,.026,0,.04l0,.031,0,.036c0,.011,0,.023,0,.033l0,.035,0,.036,0,.034,0,.032c0,.014,0,.026,0,.039s0,.021,0,.031l0,.04,0,.029,0,.038c0,.012,0,.022,0,.033l0,.035c0,.011,0,.022,0,.033l0,.035c0,.011,0,.022,0,.033s0,.025,0,.037,0,.02,0,.03,0,.025,0,.038,0,.022,0,.032,0,.023,0,.035,0,.022,0,.032,0,.024,0,.036,0,.022,0,.033,0,.023,0,.034,0,.022,0,.032,0,.023,0,.035,0,.024,0,.037,0,.02,0,.03,0,.025,0,.038,0,.02,0,.03,0,.026,0,.039,0,.02,0,.029,0,.025,0,.038v.03c0,.012,0,.024,0,.036v.032c0,.012,0,.024,0,.037v.029c0,.014,0,.029,0,.043V93.3a12.885,12.885,0,0,1-12.884,12.885Z"
+                  data-name="Union 8"
+                  id="Union_8"/>
+        </clipPath>
+        <radialGradient cx="0.899" cy="0.232" gradientUnits="objectBoundingBox" id="radial-gradient-6" r="1.086">
+            <stop offset="0.005" stop-color="#bbe5ff"/>
+            <stop offset="0.111" stop-color="#9bdeff"/>
+            <stop offset="0.175" stop-color="#8ddcff"/>
+            <stop offset="0.266" stop-color="#85d8fd"/>
+            <stop offset="0.406" stop-color="#6fcffa"/>
+            <stop offset="0.578" stop-color="#4cc0f4"/>
+            <stop offset="0.773" stop-color="#1cacec"/>
+            <stop offset="0.84" stop-color="#0aa5ea"/>
+            <stop offset="0.895" stop-color="#079bef"/>
+            <stop offset="0.986" stop-color="#0183fc"/>
+            <stop offset="1" stop-color="#007fff"/>
+        </radialGradient>
+        <filter filterUnits="userSpaceOnUse" height="79.878" id="Ellipse_354" width="79.878" x="98.724" y="-9">
+            <feOffset dx="-8" dy="11" input="SourceAlpha"/>
+            <feGaussianBlur result="blur-3" stdDeviation="8"/>
+            <feFlood flood-color="#0080ff" flood-opacity="0.702"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="Group 11584" id="Group_11584" transform="translate(-644.556 -355.082)">
+        <g data-name="Group 11581" id="Group_11581" transform="translate(664.004 359.082)">
+            <g data-name="Group 11478" id="Group_11478" transform="translate(0 1.418)">
+                <rect class="cls-2" data-name="Rectangle 4113" height="28.858" id="Rectangle_4113" rx="9" width="135.502"/>
+                <rect class="cls-3" data-name="Rectangle 4114" height="7.094" id="Rectangle_4114" rx="3.547" transform="translate(10.742 9.956)" width="114.209"/>
+                <g data-name="Group 11464" id="Group_11464" transform="translate(12.276 14.578)">
+                    <g data-name="Group 11446" id="Group_11446" transform="translate(0)">
+                        <path class="cls-4"
+                              d="M-999.853-1798.873h-87.485a5.071,5.071,0,0,0-3.1,1.039c-4.915,3.786-8.329,11.589-8.329,17.351v60.337a12.885,12.885,0,0,0,12.885,12.885h84.568a12.885,12.885,0,0,0,12.885-12.885v-60.337c0-5.762-3.414-13.566-8.33-17.351A5.069,5.069,0,0,0-999.853-1798.873Z"
+                              data-name="Path 6243"
+                              id="Path_6243"
+                              transform="translate(1098.764 1798.873)"/>
+                        <path class="cls-5"
+                              d="M-1000.259-1798.873h-86.673a6.241,6.241,0,0,0-4.036,1.47c-4.627,3.923-7.8,11.37-7.8,16.92v23.955h110.337v-23.955c0-5.551-3.169-13-7.8-16.92A6.242,6.242,0,0,0-1000.259-1798.873Z"
+                              data-name="Path 6244"
+                              id="Path_6244"
+                              transform="translate(1098.764 1798.873)"/>
+                    </g>
+                </g>
+                <g data-name="Group 11465" id="Group_11465" transform="translate(25.673 28.536)">
+                    <g class="cls-14" transform="matrix(1, 0, 0, 1, -45.12, -33.95)">
+                        <path class="cls-2"
+                              d="M17.265,33.689,1.032,19.486a3,3,0,0,1,0-4.515L17.265.768A3,3,0,0,1,22.24,3.025V7.268H51.6a4,4,0,0,1,4,4V22.776a4,4,0,0,1-4,4H22.24v4.655a3,3,0,0,1-3.017,3.006A2.946,2.946,0,0,1,17.265,33.689Z"
+                              data-name="Union 5"
+                              id="Union_5-2"
+                              transform="translate(45.12 33.95)"/>
+                    </g>
+                    <g class="cls-13" transform="matrix(1, 0, 0, 1, -45.12, -33.95)">
+                        <path class="cls-6"
+                              d="M17.265,33.688,1.033,19.485a3,3,0,0,1,0-4.515L17.265.767A3,3,0,0,1,22.24,3.025V7.681H51.6a4,4,0,0,1,4,4V23.189a4,4,0,0,1-4,4H22.24V31.43a3,3,0,0,1-3.017,3.006A2.946,2.946,0,0,1,17.265,33.688Z"
+                              data-name="Union 7"
+                              id="Union_7-2"
+                              transform="translate(129.04 94.42) rotate(180)"/>
+                    </g>
+                </g>
+                <g class="cls-7" data-name="Mask Group 329" id="Mask_Group_329" transform="translate(0 0)">
+                    <g class="cls-12" transform="matrix(1, 0, 0, 1, -19.45, -5.42)">
+                        <circle class="cls-8" cx="15.939" cy="15.939" data-name="Ellipse 354" id="Ellipse_354-2" r="15.939" transform="translate(130.72 4)"/>
+                    </g>
+                </g>
+            </g>
+            <g data-name="Group 11479" id="Group_11479" transform="translate(111.276 0)">
+                <circle class="cls-8" cx="15.939" cy="15.939" data-name="Ellipse 353" id="Ellipse_353" r="15.939" transform="translate(0)"/>
+                <g data-name="Group 11467" id="Group_11467" transform="translate(11.876 11.699)">
+                    <path class="cls-9"
+                          d="M-2149.625,25.848a4.171,4.171,0,0,1,1.2,2.992,4.17,4.17,0,0,1-1.2,2.993,3.843,3.843,0,0,1-2.878,1.247,3.809,3.809,0,0,1-2.868-1.247,4.189,4.189,0,0,1-1.185-2.993,4.189,4.189,0,0,1,1.185-2.992A3.808,3.808,0,0,1-2152.5,24.6,3.843,3.843,0,0,1-2149.625,25.848Zm-1.87,3.9a1.142,1.142,0,0,0,.426-.9,1.173,1.173,0,0,0-.426-.914,1.478,1.478,0,0,0-1.008-.374,1.467,1.467,0,0,0-1,.385,1.17,1.17,0,0,0-.437.9,1.141,1.141,0,0,0,.426.9,1.5,1.5,0,0,0,1.008.364A1.5,1.5,0,0,0-2151.5,29.744Z"
+                          data-name="Path 6226"
+                          id="Path_6226"
+                          transform="translate(2156.556 -24.601)"/>
+                </g>
+            </g>
+            <path class="cls-10" d="M-2205.874,182.981c-15.82,1.077-32.975,5.068-39.583-1.727-6.8-7-.746-28.505-.746-39.764C-2245.1,172.757-2230.178,183.982-2205.874,182.981Z" data-name="Path 6249"
+                  id="Path_6249" transform="translate(2262.404 -80.828)"/>
+        </g>
+        <rect class="cls-11" data-name="Rectangle 4165" height="116" id="Rectangle_4165" transform="translate(644.556 355.082)" width="169"/>
+    </g>
+</svg>

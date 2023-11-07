@@ -1,0 +1,60 @@
+.dashboard {
+  width: 30vw;
+  min-width: 245px;
+  height: 100vh;
+  background-color: white;
+  font-size: 1.2em;
+  padding-top: 60px;
+}
+.dashboard .dashboardBox {
+  padding: 20px 0px;
+  margin: 0px 35px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.dashboard .dashboardBox .dashboardItems {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.dashboard .dashboardBox .dashboardItems .icon {
+  color: rgb(0, 0, 0, 0.4);
+}
+.dashboard .dashboardBox .dashboardItems:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.dashboard .dashboardBox .dashboardItems:hover .dashboardItem .icon {
+  color: red;
+}
+
+.dashboard .dashboardBox .dashboardItems .dashboardItem {
+  display: inline-flex;
+  gap: 10px;
+}
+.dashboard .dashboardBox .dashboardItems .dashboardItem .icon {
+  width: 16px;
+  height: 16px;
+  color: rgb(0, 0, 0, 0.65);
+}
+.dashboard .exitBtn {
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 20px 35px 20px 20px;
+}
+.dashboard .exitBtn:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.dashboard .exitBtn:hover .icon {
+  color: red;
+}
+.dashboard .exitBtn .icon {
+  width: 16px;
+  height: 16px;
+  color: rgb(0, 0, 0, 0.65);
+}

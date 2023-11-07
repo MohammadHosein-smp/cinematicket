@@ -1,0 +1,260 @@
+.chooseSeatPage {
+  background-color: #343542f9;
+  position: relative;
+  height: 100vh;
+}
+.chooseSeatPage header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  padding: 13px 2.5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+.chooseSeatPage header .rightSide svg {
+  width: 75px;
+  height: 27px;
+  fill: white;
+}
+.chooseSeatPage header .centerSide {
+  display: flex;
+  gap: 30px;
+  background-color: #2c2d38;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 9px 20px;
+  border-radius: 5px;
+}
+.chooseSeatPage header .leftSide {
+  display: flex;
+  gap: 8px;
+  color: white;
+  font-size: 1.1em;
+}
+.chooseSeatPage header .leftSide img {
+  width: 25px;
+  height: 25px;
+}
+.chooseSeatPage .mainFooter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 65px;
+  height: calc(100vh - 65px);
+}
+.chooseSeatPage .mainFooter main {
+  overflow-y: scroll;
+  padding: 50px 0px;
+}
+.chooseSeatPage .mainFooter main::-webkit-scrollbar {
+  background: #2c2d38;
+  width: 8px;
+}
+.chooseSeatPage .mainFooter main::-webkit-scrollbar-button {
+  border-style: solid;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #2c2d38;
+  display: none;
+}
+.chooseSeatPage .mainFooter main::-webkit-scrollbar-thumb {
+  background: #6b6b72;
+  border-radius: 5px;
+}
+.chooseSeatPage .mainFooter main .cinemaScreen {
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.527);
+  text-align: center;
+  margin: 0px auto;
+  padding: 8px 0px;
+  border-radius: 7px;
+}
+.chooseSeatPage .mainFooter main .chairs {
+  padding-top: 15px;
+  margin: 0px auto;
+  text-align: center;
+  display: grid;
+  gap: 15px;
+  font-size: 1.1em;
+}
+.chooseSeatPage .mainFooter main .chairs .chair {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.chooseSeatPage .mainFooter main .chairs .chair:hover .popup {
+  visibility: visible;
+}
+.chooseSeatPage .mainFooter main .chairs .chair .popup {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 130px;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  top: -90px;
+  left: -48px;
+  border-radius: 5px;
+}
+.chooseSeatPage .mainFooter main .chairs .chair .popup::after {
+  content: "";
+  position: absolute;
+  margin-left: -9px;
+  rotate: 45deg;
+  border-top: 8px solid transparent;
+  border-right: 8px solid white;
+  border-bottom: 8px solid white;
+  border-left: 8px solid transparent;
+  top: calc(100% - 15px);
+  left: 50%;
+}
+.chooseSeatPage .mainFooter main .chairs .chair .popup .chairInf {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8em;
+}
+.mainFooter main .chairs .chair .popup .chairInf .column,
+.row {
+  font-weight: bold;
+  padding-top: 7px;
+}
+.mainFooter main .chairs .chair .popup .chairInf .separator {
+  border-left: 1px solid rgb(100, 100, 100, 0.5);
+  height: 22px;
+}
+.mainFooter main .chairs .chair .popup .price {
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+.chooseSeatPage .mainFooter footer .choiceGuide {
+  color: white;
+  background-color: #2a2b3a89;
+  padding: 12px 15%;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+}
+.chooseSeatPage .mainFooter footer .choiceGuide .guide {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.chooseSeatPage .mainFooter footer .choiceGuide .guide .guideItem {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.chooseSeatPage .mainFooter footer .choiceGuide .guide .guideItem .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.chooseSeatPage .mainFooter footer .choiceGuide .capacity {
+  font-weight: bold;
+}
+.chooseSeatPage .mainFooter footer .infMovieTicket {
+  display: flex;
+  gap: 20px;
+  color: white;
+  padding: 25px 50px;
+}
+.chooseSeatPage .mainFooter footer .infMovieTicket .infMovie {
+  display: flex;
+  gap: 12px;
+}
+.mainFooter footer .infMovieTicket .infMovie img {
+  width: 80px;
+  height: 104px;
+  border-radius: 7px;
+}
+.mainFooter footer .infMovieTicket .infMovie .infBox {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainFooter footer .infMovieTicket .infMovie .infBox .movieName {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.mainFooter footer .infMovieTicket .infMovie .infBox .cinemaLocation {
+  display: flex;
+  gap: 7px;
+}
+.mainFooter footer .infMovieTicket .infMovie .infBox .ticketTime {
+  display: flex;
+  gap: 7px;
+}
+.mainFooter footer .infMovieTicket .tickets {
+  padding-right: 20px;
+  border-right: 2px dashed #7e7f8d;
+  min-height: 104px;
+  width: calc(100vw - 635.12px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mainFooter footer .infMovieTicket .tickets .ticketBox {
+  display: flex;
+  flex-direction: column;
+}
+.mainFooter footer .infMovieTicket .tickets .ticketBox .ticket {
+  display: flex;
+  gap: 10px;
+  width: 160px;
+  padding: 10px 15px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 7px;
+}
+.mainFooter footer .infMovieTicket .tickets .ticketBox .ticket .icon {
+  cursor: pointer;
+}
+.mainFooter footer .infMovieTicket .tickets .ticketBox .ticket .dot {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid white;
+}
+.mainFooter footer .infMovieTicket .tickets .ticketBox .price {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.mainFooter footer .infMovieTicket .registerBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mainFooter footer .infMovieTicket .registerBtn .noSeat {
+  font-weight: bold;
+  direction: ltr;
+  padding-left: 5px;
+}
+.mainFooter footer .infMovieTicket .registerBtn .ticketsInf {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+.mainFooter footer .infMovieTicket .registerBtn .ticketsInf .ticketNumber {
+  display: flex;
+  gap: 10px;
+}
+.mainFooter footer .infMovieTicket .registerBtn .ticketsInf .ticketNumber svg {
+  color: #ff3543;
+  margin-top: 1px;
+}
+.mainFooter footer .infMovieTicket .registerBtn button {
+  padding: 13px 25px;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
