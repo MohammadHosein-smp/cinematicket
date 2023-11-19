@@ -43,12 +43,34 @@ export default function Title() {
           }),
           document.querySelectorAll(".active")[2].classList.add(styles.active)
         );
-      } else {
+      } else if (
+        document.getElementById("هنر و تجربه").offsetTop - 300 <
+          window.scrollY &&
+        window.scrollY < document.getElementById("تئاتر کمدی").offsetTop - 300
+      ) {
         return (
           document.querySelectorAll(".active").forEach((element) => {
             element.classList.remove(styles.active);
           }),
           document.querySelectorAll(".active")[3].classList.add(styles.active)
+        );
+      } else if (
+        document.getElementById("تئاتر کمدی").offsetTop - 300 <
+          window.scrollY &&
+        window.scrollY < document.getElementById("فیلم خارجی").offsetTop - 300
+      ) {
+        return (
+          document.querySelectorAll(".active").forEach((element) => {
+            element.classList.remove(styles.active);
+          }),
+          document.querySelectorAll(".active")[4].classList.add(styles.active)
+        );
+      } else {
+        return (
+          document.querySelectorAll(".active").forEach((element) => {
+            element.classList.remove(styles.active);
+          }),
+          document.querySelectorAll(".active")[5].classList.add(styles.active)
         );
       }
     }

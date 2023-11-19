@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 
 export default function CinemaBtn() {
   return (
-    <Link to="/home/cinema" className={styles.cinemaBtn}>
+    <Link
+      onClick={() => window.scrollTo(0, 0)}
+      to="/home/cinema"
+      className={styles.cinemaBtn}
+    >
       <FontAwesomeIcon className={styles.icon} icon={faFilm} />
       <span>سینما</span>
     </Link>

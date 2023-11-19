@@ -18,7 +18,7 @@
   margin: 40px 0px 20px 0px;
   font-size: 1.1em;
 }
-.MyTickets button {
+.MyTickets a {
   background-color: red;
   color: white;
   font-weight: bold;

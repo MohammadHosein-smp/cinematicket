@@ -4,7 +4,12 @@ import ShadowPoster from "./PosterComponent/ShadowPoster";
 
 export default function Poster({ poster, width }) {
   return (
-    <Link to={`/movie/detail/${poster.id}`} className={styles.poster} style={{ width: width }}>
+    <Link
+      onClick={() => window.scrollTo(0, 0)}
+      to={`/movie/detail/${poster.id}`}
+      className={styles.poster}
+      style={{ width: width }}
+    >
       <img
         className={styles.photoPoster}
         style={{ height: width * 1.33 }}

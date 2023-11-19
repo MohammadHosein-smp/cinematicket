@@ -8,7 +8,16 @@ export default function MovieTopSecButtons({ movie }) {
     <div className={styles.buttons}>
       <button className={styles.firstBtn}>
         <FontAwesomeIcon icon={faTicket} transform={{ rotate: "90" }} />
-        <span>انتخاب سینما و خرید بلیت</span>
+        <span
+          onClick={() =>
+            window.scrollTo(
+              0,
+              document.getElementById("dateList").offsetTop - 60
+            )
+          }
+        >
+          انتخاب سینما و خرید بلیت
+        </span>
       </button>
       <button>
         <FontAwesomeIcon icon={faPlay} />

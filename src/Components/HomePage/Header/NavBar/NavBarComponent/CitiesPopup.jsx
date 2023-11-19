@@ -19,10 +19,16 @@ export default function CitiesPopup() {
   const [citiesPopup, setCitiesPopup] = useState(false);
   const city = useSelector((state) => state.customer.city);
   const menuRef = useRef(null);
+  const shadowRef = useRef(null);
+  const popupRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
+      if (
+        (menuRef.current && !menuRef.current.contains(e.target)) ||
+        (shadowRef.current.contains(e.target) &&
+          !popupRef.current.contains(e.target))
+      ) {
         setCitiesPopup(false);
       }
     };
@@ -47,50 +53,52 @@ export default function CitiesPopup() {
       </Link>
 
       {citiesPopup && (
-        <div className={styles.citiesPopup}>
-          <div className={styles.cityHeader}>
-            <div className={styles.titleSearch}>
-              <span>موقعیت مکانی</span>
-              <div className={styles.citySearch}>
-                <input
-                  onChange={(e) => {
-                    handleSearch(e);
-                  }}
-                  type="text"
-                  placeholder="جستجوی نام شهر..."
+        <div ref={shadowRef} className={styles.shadowPopup}>
+          <div ref={popupRef} className={styles.citiesPopup}>
+            <div className={styles.cityHeader}>
+              <div className={styles.titleSearch}>
+                <span>موقعیت مکانی</span>
+                <div className={styles.citySearch}>
+                  <input
+                    onChange={(e) => {
+                      handleSearch(e);
+                    }}
+                    type="text"
+                    placeholder="جستجوی نام شهر..."
+                  />
+                  <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </div>
+              </div>
+              <div>
+                <FontAwesomeIcon
+                  onClick={() => setCitiesPopup(false)}
+                  className={styles.xmark}
+                  icon={faXmark}
                 />
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
               </div>
             </div>
-            <div>
-              <FontAwesomeIcon
-                onClick={() => setCitiesPopup(false)}
-                className={styles.xmark}
-                icon={faXmark}
-              />
+            <ul className={styles.cityList}>
+              {cityList.map((city) => {
+                return (
+                  <li
+                    onClick={() => {
+                      dispatch(selectCity(city));
+                      setCitiesPopup(false);
+                    }}
+                    key={city}
+                    className={styles.city}
+                  >
+                    {city}
+                  </li>
+                );
+              })}
+            </ul>
+            <div className={styles.cityFooter}>
+              <button>
+                <FontAwesomeIcon icon={faLocationCrosshairs} />
+                <span>مکان یابی</span>
+              </button>
             </div>
-          </div>
-          <ul className={styles.cityList}>
-            {cityList.map((city) => {
-              return (
-                <li
-                  onClick={() => {
-                    dispatch(selectCity(city));
-                    setCitiesPopup(false);
-                  }}
-                  key={city}
-                  className={styles.city}
-                >
-                  {city}
-                </li>
-              );
-            })}
-          </ul>
-          <div className={styles.cityFooter}>
-            <button>
-              <FontAwesomeIcon icon={faLocationCrosshairs} />
-              <span>مکان یابی</span>
-            </button>
           </div>
         </div>
       )}

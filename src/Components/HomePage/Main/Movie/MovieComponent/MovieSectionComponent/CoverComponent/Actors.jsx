@@ -4,9 +4,9 @@ import Actor from "./Actor";
 export default function Actors({ cover }) {
   return (
     <div className={styles.actors}>
-      <Actor cover={cover} actor={cover.actorName1} />
-      <Actor cover={cover} actor={cover.actorName2} />
-      <Actor cover={cover} actor={cover.actorName3} />
+      {cover.actors.slice(0, 3).map((actor) => (
+        <Actor cover={cover} key={actor} actor={actor} />
+      ))}
     </div>
   );
 }

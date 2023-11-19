@@ -11,6 +11,8 @@ export default function Movies() {
         <MovieSection sec="کودک و نوجوان" />
         <MovieSection cover={Movie[34]} sec="تئاتر" />
         <MovieSection cover={Movie[36]} sec="هنر و تجربه" />
+        <MovieSection cover={Movie[52]} sec="تئاتر کمدی" />
+        <MovieSection sec="فیلم خارجی" />
       </div>
       <SaleTableSection />
     </div>

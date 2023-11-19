@@ -9,7 +9,9 @@ export default function MovieInfBox({ movie }) {
   return (
     <div className={styles.infBox}>
       <div className={styles.nameDirector}>
-        <strong className={styles.name}>فیلم {movie.name}</strong>
+        <strong className={styles.name}>{` ${
+          movie.section.includes("تئاتر") ? "تئاتر" : "فیلم"
+        } ${movie.name}`}</strong>
         {movie.director && (
           <>
             <span className={styles.slash} />
@@ -27,7 +29,10 @@ export default function MovieInfBox({ movie }) {
         )}
       </div>
       <MovieRateView movie={movie} />
-      <MovieActors movie={movie} actorsArray={movie.actors.slice(0, 3)} />
+      <MovieActors
+        movie={movie}
+        actorsArray={movie.actors && movie.actors.slice(0, 3)}
+      />
       <MovieTopSecButtons movie={movie} />
     </div>
   );

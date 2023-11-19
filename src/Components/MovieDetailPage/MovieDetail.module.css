@@ -127,6 +127,7 @@
 .topSection .shadow .posterInf .infBox .buttons .firstBtn {
   color: white;
   background-color: #ff3543;
+  cursor: pointer;
 }
 
 .movieDetailPage {
@@ -420,4 +421,9 @@
   border-radius: 5px;
   background-color: rgb(0, 0, 0, 0.15);
   color: rgb(0, 0, 0, 0.5);
+}
+.fixed {
+  position: sticky;
+  background-color: white;
+  top: 55px;
 }

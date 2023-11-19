@@ -6,7 +6,9 @@ export default function TitleBtn({ children }) {
         window.scrollTo(
           0,
           document.getElementById(children).offsetTop -
-            (children === "کودک و نوجوان" ? 110 : 130)
+            (children === "کودک و نوجوان" || children === "فیلم خارجی"
+              ? 110
+              : 130)
         )
       }
       className={`${styles.titleBtn} active`}

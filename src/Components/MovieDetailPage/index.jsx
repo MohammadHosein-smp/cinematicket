@@ -21,10 +21,14 @@ export default function MovieDetailPage() {
           </strong>
           <p className={styles.description}>{movie.description}</p>
           <p>{movie.synopsis}</p>
-          <div className={styles.actorsLabel}>بازیگران «{movie.name}»</div>
+          {movie.actors && (
+            <div className={styles.actorsLabel}>بازیگران «{movie.name}»</div>
+          )}
           <MovieActors movie={movie} actorsArray={movie.actors} />
           <SansSelection movie={movie} />
-          <div className={styles.restOfInf}>سایر اطلاعات {movie.name}</div>
+          <div id="restOfInf" className={styles.restOfInf}>
+            سایر اطلاعات {movie.name}
+          </div>
           <div className={styles.yearOfMade}>سال ساخت : {movie.yearOfMade}</div>
           <MovieCommentSection />
         </section>

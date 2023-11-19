@@ -3,13 +3,25 @@ import styles from "../CinemaPage.module.css";
 import { faLocationDot, faStar } from "@fortawesome/free-solid-svg-icons";
 import { cinemaData } from "../../../Data";
 import CinemaPossibilities from "./CinemaPossibilities";
+import { useSelector } from "react-redux";
 
 export default function CinemaSection() {
+  const city = useSelector((state) => state.customer.city);
+  const Cinema = [...cinemaData];
+  Cinema.sort((a, b) => {
+    if (a.city === city && b.city !== city) {
+      return -1;
+    } else if (a.city === city && b.city === city) {
+      return 0;
+    } else {
+      return 1;
+    }
+  });
   return (
     <section className={styles.cinemaSec}>
-      {cinemaData.map((cinema) => {
+      {Cinema.map((cinema) => {
         return (
-          <div className={styles.cinema}>
+          <div key={cinema.name} className={styles.cinema}>
             <img src={`/images/cinema/${cinema.name}.webp`} alt={cinema.name} />
             <div className={styles.infBox}>
               <span className={styles.name}>{cinema.name}</span>
@@ -27,8 +39,12 @@ export default function CinemaSection() {
                   <FontAwesomeIcon className={styles.icon} icon={faStar} />
                   <div>{cinema.ratePoint}/5</div>
                 </div>
-                <span>.</span>
-                <div className={styles.rateNum}>{cinema.rateNum} رای</div>
+                {cinema.rateNum && (
+                  <>
+                    <span>.</span>
+                    <div className={styles.rateNum}>{cinema.rateNum} رای</div>
+                  </>
+                )}
               </div>
               <CinemaPossibilities cinema={cinema} />
             </div>

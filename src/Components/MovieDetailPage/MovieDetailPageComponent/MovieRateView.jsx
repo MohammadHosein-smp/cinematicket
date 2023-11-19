@@ -22,7 +22,7 @@ export default function MovieRateView({ movie }) {
             <FontAwesomeIcon className={styles.icon} icon={faUser} />
           </div>
         )}
-        <div className={styles.slash} />
+        {(movie.rate || movie.view) && <div className={styles.slash} />}
         <button className={styles.rateBtn}>
           <FontAwesomeIcon icon={heart} />
           <span>امتیاز شما</span>

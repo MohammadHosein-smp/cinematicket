@@ -8,7 +8,11 @@ export default function MovieTitle({ title }) {
     <div className={styles.movieTitle}>
       <div className={styles.titleRight}>{title}</div>
       <div className={styles.titleLeft}>
-        <Link to={`/movie/more/${title}`} className={styles.seeMore}>
+        <Link
+          onClick={() => window.scrollTo(0, 0)}
+          to={`/movie/more/${title}`}
+          className={styles.seeMore}
+        >
           <span>مشاهده همه</span>
           <FontAwesomeIcon className={styles.icon} icon={faChevronLeft} />
         </Link>

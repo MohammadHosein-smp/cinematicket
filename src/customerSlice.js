@@ -1,8 +1,6 @@
 const initialStateCustomer = {
   city: "",
-  fullName: "",
-  nationalId: "",
-  createdAt: "",
+  reservedTicket: [],
 };
 
 export default function customerReducer(state = initialStateCustomer, action) {
@@ -12,30 +10,34 @@ export default function customerReducer(state = initialStateCustomer, action) {
         ...state,
         city: action.payload,
       };
-    case "customer/createCustomer":
+    case "customer/reserveTicket":
       return {
         ...state,
-        fullName: action.payload.fullName,
-        nationalId: action.payload.nationalId,
-        createdAt: action.payload.createdAt,
+        reservedTicket: action.payload,
       };
-    case "customer/updateName":
-      return { ...state, fullName: action.payload };
+    case "customer/unreserveTicket":
+      return {
+        ...state,
+        reservedTicket: action.payload,
+      };
+    case "customer/resetTicket":
+      return {
+        ...state,
+        reservedTicket: [],
+      };
     default:
       return state;
   }
 }
+export function resetTicket() {
+  return { type: "customer/resetTicket" };
+}
 export function selectCity(city) {
   return { type: "customer/selectCity", payload: city };
 }
-
-export function createCustomer(fullName, nationalId) {
-  return {
-    type: "customer/createCustomer",
-    payload: { fullName, nationalId, createdAt: new Date().toISOString() },
-  };
+export function reserveTicket(ticket) {
+  return { type: "customer/reserveTicket", payload: ticket };
 }
-
-export function updateName(fullName) {
-  return { type: "customer/updateName", payload: "fullName" };
+export function unreserveTicket(ticket) {
+  return { type: "customer/unreserveTicket", payload: ticket };
 }

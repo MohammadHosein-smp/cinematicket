@@ -10,8 +10,20 @@ export default function MovieDateList() {
     fontWeight: "bold",
   };
   const dispatch = useDispatch();
+  document.addEventListener("scroll", () => {
+    if (
+      document.getElementById("dateList") &&
+      document.getElementById("restOfInf")
+    ) {
+      if (window.scrollY > document.getElementById("dateList").offsetTop - 60) {
+        document.getElementById("dateList").classList.add(styles.fixed);
+      } else {
+        document.getElementById("dateList").classList.remove(styles.fixed);
+      }
+    }
+  });
   return (
-    <div className={styles.dateList}>
+    <div className={styles.dateList} id="dateList">
       {Date.map((date, i) => {
         return (
           <div

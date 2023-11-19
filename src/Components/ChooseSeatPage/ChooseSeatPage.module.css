@@ -1,7 +1,7 @@
 .chooseSeatPage {
   background-color: #343542f9;
   position: relative;
-  height: 100vh;
+  padding-bottom: 65px;
 }
 .chooseSeatPage header {
   width: 100%;
@@ -27,6 +27,7 @@
   font-weight: bold;
   padding: 9px 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .chooseSeatPage header .leftSide {
   display: flex;
@@ -165,10 +166,29 @@
   gap: 20px;
   color: white;
   padding: 25px 50px;
+  min-height: 154px;
+  max-height: 213.6px;
+  overflow-y: auto;
+}
+.chooseSeatPage .mainFooter footer .infMovieTicket::-webkit-scrollbar {
+  background: #2c2d38;
+  width: 8px;
+}
+.chooseSeatPage .mainFooter footer .infMovieTicket::-webkit-scrollbar-button {
+  border-style: solid;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #2c2d38;
+  display: none;
+}
+.chooseSeatPage .mainFooter footer .infMovieTicket::-webkit-scrollbar-thumb {
+  background: #6b6b72;
+  border-radius: 5px;
 }
 .chooseSeatPage .mainFooter footer .infMovieTicket .infMovie {
   display: flex;
   gap: 12px;
+  margin-top: 0px;
 }
 .mainFooter footer .infMovieTicket .infMovie img {
   width: 80px;
@@ -231,6 +251,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 0px;
 }
 .mainFooter footer .infMovieTicket .registerBtn .noSeat {
   font-weight: bold;
@@ -257,4 +278,54 @@
   border: none;
   font-weight: bold;
   color: white;
+  text-wrap: nowrap;
+}
+.sansPopup {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  top: 50px;
+  border-radius: 5px;
+  padding: 15px 30px;
+  width: 620px;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sansPopup .salonName {
+  font-size: 1.25em;
+  color: rgb(0, 0, 0, 0.7);
+}
+.sansPopup .sansList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.sansPopup .sansList .sansBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+}
+.sansPopup .sansList .sansBox .sansTime,
+.sansPrice {
+  display: flex;
+  gap: 5px;
+  color: #8f8f8f;
+}
+.sansPopup .sansList .sansBox .activeSans {
+  position: absolute;
+  top: 10px;
+  color: white;
+  background-color: #8f8f8f;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
 }

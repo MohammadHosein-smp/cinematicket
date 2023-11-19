@@ -7,7 +7,6 @@ const initialStateSalonData = {
   time: "",
   movieId: "",
   chairs: [],
-  tickets: [],
 };
 
 export default function salonDataReducer(
@@ -28,9 +27,19 @@ export default function salonDataReducer(
       };
     case "salonData/chooseSeat":
       return { ...state, chairs: action.payload };
+    case "salonData/changeSans":
+      return {
+        ...state,
+        salonName: action.payload.salonName,
+        time: action.payload.time,
+        chairs: action.payload.chairs,
+      };
     default:
       return state;
   }
+}
+export function changeSans(salonName, time, chairs) {
+  return { type: "salonData/changeSans", payload: { salonName, time, chairs } };
 }
 
 export function chooseSeat(chairs) {

@@ -68,7 +68,6 @@
   color: rgb(184, 184, 184);
 }
 .nav .navLeft .popup {
-  visibility: visible;
   position: absolute;
   z-index: 1;
   color: black;
@@ -104,9 +103,15 @@
   width: 16px;
   height: 16px;
 }
-
+.nav .navLeft .shadowPopup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(0, 0, 0, 0.4);
+}
 .nav .navLeft .citiesPopup {
-  visibility: visible;
   position: absolute;
   z-index: 1;
   color: black;
@@ -187,4 +192,75 @@
   display: inline-flex;
   gap: 5px;
   border-radius: 5px;
+}
+.searchBox .shadowPopup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.searchBoxPopup {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  right: 260px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 550px;
+  height: 450px;
+  padding: 0px 20px;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+.searchBoxPopup .movie {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.searchBoxPopup .movie .posters {
+  display: flex;
+  gap: 15px;
+}
+.searchBoxPopup .movie .posters .poster {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.searchBoxPopup .movie .posters .poster img {
+  width: 116px;
+  height: 165px;
+  border-radius: 10px;
+}
+.searchBoxPopup .movie .posters .poster span {
+  text-align: center;
+  font-size: 0.85em;
+}
+.searchBoxPopup .cinema {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.searchBoxPopup .cinema .cinemaPosters {
+  display: flex;
+  gap: 15px;
+}
+.searchBoxPopup .cinema .cinemaPosters .cinemaPoster {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.searchBoxPopup .cinema .cinemaPosters .cinemaPoster img {
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+}
+.searchBoxPopup .cinema .cinemaPosters .cinemaPoster span {
+  text-align: center;
+  font-size: 0.85em;
 }

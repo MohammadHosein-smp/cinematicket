@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../MyTickets.module.css";
 
 export default function MyTickets() {
@@ -9,7 +10,9 @@ export default function MyTickets() {
         در این صفحه بلیت‌های فعال و بلیت‌های که قبلا خریده‌اید به شما نمایش
         داده‌ می‌شود.
       </div>
-      <button>مشاهده فیلم ها و خرید بلیت</button>
+      <Link onClick={() => window.scrollTo(0, 0)} to="/">
+        مشاهده فیلم ها و خرید بلیت
+      </Link>
     </div>
   );
 }
